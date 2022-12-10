@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form action="" id="frm_login" class="needs-validation" novalidate>
+        <h5>Login</h5>
+        <label class="form-label" for="correo">
+       Correo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo" required>
+          <div class="invalid-feedback">
+            Ingresa un correo valido
+          </div>
+        </label><br><br>
+        <label class="form-label" for="clave">
+          Contraseña
+          <input type="password" class="form-control" id="clave" placeholder="Ingrese su contraseña" required>
+          <div class="invalid-feedback">
+            Verifica tu contraseña
+          </div>
+        </label><br>
+        <div>
+          <a href="javascript:void();" id="btn_ir_a_registro">No estoy registrado</a>&nbsp;&nbsp;
+          <input type="submit" id="btn_enviar" class="btn btn-primary" value="Enviar">
+        </div>
+      </form>
+      <form action="" class="needs-validation ocultar" id="frm_registro" novalidate>
+          <section class="primera_parte">
+            <h5>Registro</h5>
+            <label class="form-label" for="nombre">
+              Nombre
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+              <div class="invalid-feedback">
+                Ingresa un nombre valido
+              </div>
+            </label>
+            <br>
+            <label for="apellido" class="form-label">
+              Apellido
+              <input type="text" id="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+              <div class="invalid-feedback">
+                Ingresa un apellido valido
+              </div>
+            </label><br>
+            <label class="form-label" for="celular">
+              Celular
+              <input type="text" class="form-control" id="celular" placeholder="Ingrese su celular" required>
+              <div class="invalid-feedback">
+                Ingresa un celular correcto
+              </div>
+            </label><br>
+            <label class="form-label" for="direccion">
+              Dirección
+              <textarea name="" class="form-control" id="direccion" cols="20" rows="3" maxlength="50" required></textarea>
+              <div class="invalid-feedback">
+                Completa la dirección
+              </div>
+            </label><br>
+          </section>
+          <section class="segunda_parte">
+            <label class="form-label" for="correo">
+              Correo
+              <input type="email" class="form-control" id="correo1" placeholder="Ingrese su correo" required>
+              <div class="invalid-feedback">
+                Ingresa un correo valido
+              </div>
+            </label><br>
+            <label for="clave" class="form-label">
+              Contraseña
+              <input type="password" class="form-control" id="clave1" placeholder="Ingrese su clave" required>
+              <div class="invalid-feedback">
+                Valida la clave, debe ser igual
+              </div>
+            </label><br>
+            <label for="clave" class="form-label">
+              Confirmar contraseña
+              <input type="password" class="form-control" id="clave2" placeholder="Confirme su clave" required>
+              <div class="invalid-feedback">
+                Valida la clave, debe ser igual
+              </div>
+            </label><br>
+            <input type="submit" class="btn btn-outline-primary" id="btn_enviar_registrar" value="Enviar">
+          </section>
+      </form>
+      <section id="home" class="ocultar">
+        <h2>Pagina principal</h2>
+      </section>
+</body>
+</html>
